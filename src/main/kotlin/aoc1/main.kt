@@ -3,7 +3,6 @@ package aoc1
 import java.io.File
 
 fun main() {
-    println("Hello World!")
     val dataList = readFileAsLinesUsingUseLines("src/main/resources/dataInput_1.txt")
     val numberList = mutableListOf<Int>()
     dataList.forEach { numberList.add(it.toInt()) }

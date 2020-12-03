@@ -3,7 +3,7 @@ package aoc1
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class aoc1test {
+class Aoc1test {
     @Test
     fun twoNumbersShouldEqual2020() {
         assertEquals(equals2020(2010, 10), true)
