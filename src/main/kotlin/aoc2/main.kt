@@ -54,7 +54,6 @@ fun regGetPass(text: String): String {
 // Puzzles 2
 
 fun validateCharPositions(text: String, character: Char): Boolean {
-    println(text)
     val atMinPosition = regGetPass(text)[regGetMin(text) - 1] == character
     val atMaxPosition = regGetPass(text)[regGetMax(text) - 1] == character
     return atMinPosition.xor(atMaxPosition)
