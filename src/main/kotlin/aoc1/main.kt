@@ -17,10 +17,6 @@ fun main() {
 fun readFileAsLinesUsingUseLines(fileName: String): List<String>
         = File(fileName).useLines { it.toList() }
 
-fun equals2020(a: Int, b: Int): Boolean {
-    return a + b == 2020
-}
-
 fun multiplyList(arr: List<Int>): Int {
     return arr.reduce { acc, i -> acc * i }
 }
