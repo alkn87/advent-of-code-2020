@@ -14,8 +14,9 @@ fun main() {
     println(multiplyList(resultTriplet))
 }
 
-fun readFileAsLinesUsingUseLines(fileName: String): List<String>
-        = File(fileName).useLines { it.toList() }
+fun readFileAsLinesUsingUseLines(fileName: String): List<String> {
+    return File(fileName).useLines { it.toList() }
+}
 
 fun multiplyList(arr: List<Int>): Int {
     return arr.reduce { acc, i -> acc * i }

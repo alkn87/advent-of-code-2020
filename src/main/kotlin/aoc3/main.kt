@@ -23,8 +23,9 @@ fun main () {
     println(result2)
 }
 
-fun readFileAsLinesUsingUseLines(fileName: String): List<String>
-        = File(fileName).useLines { it.toList() }
+fun readFileAsLinesUsingUseLines(fileName: String): List<String> {
+    return File(fileName).useLines { it.toList() }
+}
 
 fun performStep(xStep: Int, yStep: Int, x: Int, y: Int, count: Int, dataList: List<String>): Int {
     if (y+yStep > dataList.size - 1) return count

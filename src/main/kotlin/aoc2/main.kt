@@ -20,8 +20,9 @@ fun main () {
     println(counter2) // Result Puzzle 2
 }
 
-fun readFileAsLinesUsingUseLines(fileName: String): List<String>
-        = File(fileName).useLines { it.toList() }
+fun readFileAsLinesUsingUseLines(fileName: String): List<String> {
+    return File(fileName).useLines { it.toList() }
+}
 
 fun getCharacterOccurrence(s: String, c: Char): Int {
     return s.filter { it == c }.count()
