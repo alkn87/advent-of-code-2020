@@ -7,7 +7,6 @@ fun main() {
     val dataList = readFileAsLinesUsingUseLines("src/main/resources/dataInput_5.txt")
 
     // Part 1
-
     println(getMaxSeatId(dataList))
 
     // Part 2
